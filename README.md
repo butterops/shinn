@@ -10,6 +10,8 @@ Under the hood `ShInn` utilizes VirtualBox, Vagrant and Ansible for smooth devel
 
 ### ShInn Setup
 
+For Windows Users: [Install Ansible on windows](https://docs.ansible.com/ansible/latest/user_guide/windows_faq.html#can-ansible-run-on-windows)
+
 > Developers must do this on their machines
 
 - Install **VirtualBox**, **Vagrant** and **Asnible**.
