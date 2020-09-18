@@ -50,3 +50,27 @@ Developers get to access the `ShInn` by its own command like below
 ```bash
 shinn 'ls ~/Projects'
 ```
+
+### Result
+
+```bash
+Kumars-MBP:~ kgaurav$ shinn
+Welcome to Ubuntu 20.04.1 LTS (GNU/Linux 5.4.0-47-generic x86_64)
+
+     _______. __    __   __  .__   __. .__   __. 
+    /       ||  |  |  | |  | |  \ |  | |  \ |  | 
+   |   (----`|  |__|  | |  | |   \|  | |   \|  | 
+    \   \    |   __   | |  | |  . `  | |  . `  | 
+.----)   |   |  |  |  | |  | |  |\   | |  |\   | 
+|_______/    |__|  |__| |__| |__| \__| |__| \__| 
+                                                 
+https://shinn.butterops.dev
+
+30 updates can be installed immediately.
+8 of these updates are security updates.
+To see these additional updates run: apt list --upgradable
+
+
+Last login: Fri Sep 18 11:52:23 2020 from 10.0.2.2
+vagrant@shinn:~$
+```
