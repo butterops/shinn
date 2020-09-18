@@ -1,0 +1,16 @@
+---
+box: laravel/homestead
+ip: "192.168.10.12"
+name: ShInn
+hostname: shinn
+memory: 4096
+cpus: 2
+authorize: ~/.ssh/id_rsa.pub
+keys:
+    - ~/.ssh/id_rsa
+
+folders:
+  - map: ~/Projects/ButterOps
+    to: /home/vagrant/Projects
+
+ansible-playbook: features/playbook.yml
