@@ -51,6 +51,11 @@ Developers get to access the `ShInn` by its own command like below
 shinn 'ls ~/Projects'
 ```
 
+### Future extensions
+
+- [ ] Add support for secrets/env variables.
+- [ ] Add aws-cli configuration provision.
+
 ### Result
 
 ```bash
