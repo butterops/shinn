@@ -18,8 +18,6 @@
 - include_tasks: tgenv.yml
   when: tgenv_install.rc != 0
 
-
-
 # - name: terraform | check if terraform-docs is installed
 #   command: which terraform-docs
 #   changed_when: false

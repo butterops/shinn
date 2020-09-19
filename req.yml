@@ -1,4 +1,5 @@
 ---
     roles:
+      - name: gantsign.golang
       - name: geerlingguy.docker
       - name: darkwizard242.awscli

@@ -2,6 +2,7 @@
   become: true
 
   roles:
+    - role: gantsign.golang
     - role: geerlingguy.docker
     - role: darkwizard242.awscli
 
