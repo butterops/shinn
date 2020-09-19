@@ -1,0 +1,21 @@
+---
+
+- name: Clone tgenv
+  git:
+    repo: https://github.com/cunymatthieu/tgenv
+    dest: /home/vagrant/.tgenv
+
+- name: Create symbolic link for tgenv and terragrunt
+  file:
+    src: "/home/vagrant/.tgenv/bin/{{ item.src }}"
+    dest: "/usr/local/bin/{{ item.src }}"
+    state: link
+  with_items:
+    - src: terragrunt
+    - src: tgenv
+
+- name: Install terragrunt
+  command: tgenv install latest
+
+- name: Use latest terragrunt version
+  command: tgenv use latest

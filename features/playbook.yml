@@ -3,8 +3,8 @@
 
   roles:
     - role: geerlingguy.docker
-    - role: andrewrothstein.terraform
     - role: darkwizard242.awscli
 
   tasks:
     - import_tasks: shell/main.yml
+    - import_tasks: terraform/main.yml

@@ -1,0 +1,30 @@
+---
+
+- name: check if tfenv installed
+  command: which tfenv
+  changed_when: false
+  failed_when: false
+  register: tfenv_install
+
+- include_tasks: tfenv.yml
+  when: tfenv_install.rc != 0
+
+- name: check if tgenv installed
+  command: which tgenv
+  changed_when: false
+  failed_when: false
+  register: tgenv_install
+
+- include_tasks: tgenv.yml
+  when: tgenv_install.rc != 0
+
+
+
+# - name: terraform | check if terraform-docs is installed
+#   command: which terraform-docs
+#   changed_when: false
+#   failed_when: false
+#   register: terraform_docs_exist
+
+# - include_tasks: terraform-docs.yml
+#   when: terraform_docs_exist.rc != 0

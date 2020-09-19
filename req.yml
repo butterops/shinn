@@ -1,5 +1,4 @@
 ---
     roles:
       - name: geerlingguy.docker
-      - name: andrewrothstein.terraform
       - name: darkwizard242.awscli

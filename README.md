@@ -17,7 +17,7 @@ For Windows Users: [Install Ansible on windows](https://docs.ansible.com/ansible
 - Install **VirtualBox**, **Vagrant** and **Asnible**.
 - Create a `~/Projects/ButterOps` directory. Name is case sensitive.
 - SSH keygen at your machine
-- Add ssh public key to your account in g Github / Bitbucket/ Gitlab / Self-hosted git service.
+- Add ssh public key to your account in Github / Bitbucket/ Gitlab / Self-hosted git service.
 
 ```bash
 cd ~/Projects/ButterOps
@@ -58,7 +58,7 @@ shinn 'ls ~/Projects'
 - [ ] Add support for secrets/env variables.
 - [ ] Add aws-cli configuration provision.
 
-### Result
+### Sample expected login output
 
 ```bash
 Kumars-MBP:~ kgaurav$ shinn

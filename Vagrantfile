@@ -4,7 +4,7 @@
 require 'yaml'
 
 rootDir     = File.expand_path(File.dirname(__FILE__))
-vmConfYaml  = rootDir + '/shinn.conf.yaml'
+vmConfYaml  = rootDir + '/shinn.conf.yml'
 vmConf      = YAML::load(File.read(vmConfYaml))
 
 Vagrant.require_version '>= 2.2.10'

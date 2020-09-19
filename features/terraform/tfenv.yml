@@ -1,0 +1,21 @@
+---
+
+- name: Clone tfenv
+  git:
+    repo: https://github.com/tfutils/tfenv
+    dest: /home/vagrant/.tfenv
+
+- name: Create symbolic link for tfenv and terraform 
+  file:
+    src: "/home/vagrant/.tfenv/bin/{{ item.src }}"
+    dest: "/usr/local/bin/{{ item.src }}"
+    state: link
+  with_items:
+    - src: terraform
+    - src: tfenv
+
+- name: Install terraform
+  command: tfenv install
+
+- name: Use latest terraform version
+  command: tfenv use
