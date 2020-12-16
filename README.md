@@ -16,7 +16,7 @@ For Windows Users: [Install Ansible on windows](https://docs.ansible.com/ansible
 
 - Install **VirtualBox**, **Vagrant** and **Asnible**.
 - Create a `~/Projects/ButterOps` directory. Name is case sensitive.
-- SSH keygen at your machine
+- SSH keygen at your machine `ssh-keygen -t rsa`
 - Add ssh public key to your account in Github / Bitbucket/ Gitlab / Self-hosted git service.
 
 ```bash
