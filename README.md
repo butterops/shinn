@@ -46,6 +46,8 @@ function shinn() {
     ( ssh vagrant@127.0.0.1 -p 2222 $* )
 }
 ```
+And/Or (for Linux and MacOS)
+`alias shinn='ssh vagrant@127.0.0.1 -p 2222 -X'`
 
 Developers get to access the `ShInn` by its own command like below
 
